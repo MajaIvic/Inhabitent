@@ -670,3 +670,20 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+footer {
+  background: url(../../images/photos/dark-wood.png);
+  height: 350px; }
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contact-info {
+  color: white; }
+
+.business-hours {
+  color: white; }
+
+.container {
+  color: white; }
