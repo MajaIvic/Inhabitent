@@ -63,24 +63,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'content';
 @import 'media';
 @import 'page-templates';
+@import 'journal';
+@import 'footer';
+@import 'header';
 
-footer {
-  background: url(../../images/photos/dark-wood.png);
-  height: 350px;
-}
-
-.footer-info {
-  display: flex;
-}
-
-.contact-info {
-  color: white;
-}
-
-.business-hours {
-  color: white;
-}
-
-.container {
-  color: white;
+body {
+  min-height: 100vh;
 }

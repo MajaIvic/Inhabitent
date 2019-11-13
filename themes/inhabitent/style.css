@@ -669,7 +669,39 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* Global, general style */
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
 /* Front page */
+.blog .entry-header {
+  position: relative; }
+
+.blog .entry-title {
+  position: absolute;
+  top: 20px;
+  left: 10px; }
+  .blog .entry-title a {
+    text-decoration: none;
+    background-color: #248a83;
+    color: #fff;
+    font-size: 2.1rem;
+    left: 0;
+    position: absolute;
+    margin-top: 2.25rem; }
+  .blog .entry-title img {
+    height: auto;
+    max-width: 100%; }
+
+.blog .entry-meta {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white; }
+
 footer {
   background: url(../../images/photos/dark-wood.png);
   height: 350px; }
@@ -677,13 +709,22 @@ footer {
 .footer-info {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-left: 10rem; }
 
 .contact-info {
   color: white; }
 
 .business-hours {
-  color: white; }
+  color: white;
+  margin-left: 5rem; }
 
 .container {
-  color: white; }
+  color: green;
+  position: absolute; }
+
+.main-navigation {
+  padding: 5rem 0 5rem; }
+
+body {
+  min-height: 100vh; }
