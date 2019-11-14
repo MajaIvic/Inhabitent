@@ -1,3 +1,15 @@
 .main-navigation {
-  padding: 5rem 0 5rem;
+  // background-color: aqua;
+  padding: 1.2rem 0 1.2rem;
+  position: fixed;
+  z-index: 99;
+}
+.fp-banner {
+  position: relative;
+}
+.fp-banner-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -434,7 +434,6 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 100%; }
   .main-navigation ul {
     display: none;
@@ -444,7 +443,6 @@ a {
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
       position: absolute;
       top: 1.5rem;
       left: -999rem;
@@ -461,7 +459,6 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
     position: relative; }
   .main-navigation a {
     display: block;
@@ -487,13 +484,11 @@ a {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  float: left;
   width: 50%; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-  float: right;
   text-align: right;
   width: 50%; }
 
@@ -533,12 +528,10 @@ a {
 --------------------------------------------------------------*/
 .alignleft {
   display: inline;
-  float: left;
   margin-right: 1.5rem; }
 
 .alignright {
   display: inline;
-  float: right;
   margin-left: 1.5rem; }
 
 .aligncenter {
@@ -552,7 +545,7 @@ a {
 --------------------------------------------------------------*/
 .clearfix {
   clear: both;
-  content: "";
+  content: '';
   display: table; }
 
 /*--------------------------------------------------------------
@@ -709,8 +702,7 @@ footer {
 .footer-info {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  margin-left: 10rem; }
+  display: flex; }
 
 .contact-info {
   color: white; }
@@ -721,10 +713,26 @@ footer {
 
 .container {
   color: green;
-  position: absolute; }
+  text-align: center; }
+
+.footer-container {
+  max-width: 1120px;
+  margin-left: 10rem; }
 
 .main-navigation {
-  padding: 5rem 0 5rem; }
+  padding: 1.2rem 0 1.2rem;
+  position: fixed;
+  z-index: 99; }
+
+.fp-banner {
+  position: relative; }
+
+.fp-banner-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 body {
   min-height: 100vh; }

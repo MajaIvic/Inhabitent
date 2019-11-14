@@ -34,10 +34,16 @@
 			<?php
 
 			if ( is_front_page()){
-				if ( has_post_thumbnail() ) {
-					the_post_thumbnail();
+				if ( has_post_thumbnail() ) { ?>
+					<div class="fp-banner">
+            <?php the_post_thumbnail(); ?>
+            <img class="fp-banner-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg"/>
+        </div>
+        <?php
+					
+					// the_post_thumbnail();
 				} 
-				
+			
 
 			} elseif (is_page()) {
 				if ( has_post_thumbnail() ) {

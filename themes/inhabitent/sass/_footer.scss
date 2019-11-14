@@ -5,7 +5,6 @@ footer {
 
 .footer-info {
   display: flex;
-  margin-left: 10rem;
 }
 
 .contact-info {
@@ -19,5 +18,11 @@ footer {
 
 .container {
   color: green;
-  position: absolute;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1120px;
+
+  margin-left: 10rem;
 }
