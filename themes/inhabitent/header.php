@@ -21,13 +21,35 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
+				<div class="container">
 				<div class="site-branding">
+					<div class="logo">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<a href="<?php echo home_url(); ?>">
+                    <img class="tent-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" />
+				</a>
+            </div>
+			</div>
+
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+
 					<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
 				</div><!-- .site-branding -->
+				
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
+
+				
+
+
+
+
+
+
+
+
+
+
+					
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
@@ -36,6 +58,7 @@
 			if ( is_front_page()){
 				if ( has_post_thumbnail() ) { ?>
 					<div class="fp-banner">
+						
             <?php the_post_thumbnail(); ?>
             <img class="fp-banner-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg"/>
         </div>
@@ -45,7 +68,7 @@
 				} 
 			
 
-			} elseif (is_page()) {
+			} elseif (is_page('about')) {
 				if ( has_post_thumbnail() ) {
 					the_title();
 					the_post_thumbnail();

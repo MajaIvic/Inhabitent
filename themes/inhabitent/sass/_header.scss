@@ -1,15 +1,28 @@
-.main-navigation {
-  // background-color: aqua;
-  padding: 1.2rem 0 1.2rem;
+.site-header {
+  background-color: white;
+  opacity: 0.69;
   position: fixed;
   z-index: 99;
-}
-.fp-banner {
-  position: relative;
-}
-.fp-banner-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .logo {
+    display: flex;
+    width: 4rem;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }

@@ -1,0 +1,29 @@
+.fp-banner-img {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../images/home-hero.jpg) no-repeat top;
+}
+.fp-banner {
+  position: relative;
+}
+.fp-banner-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-type-blocks {
+  display: flex;
+  flex-direction: row;
+  .product-type-block-wrapper {
+    border: 1px solid gray;
+    border-top-width: 6px;
+  }
+  img {
+    width: 30%;
+  }
+}
+.inhabitent-journal {
+  display: flex;
+  flex-direction: row;
+}
