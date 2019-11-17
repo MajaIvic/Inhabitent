@@ -596,6 +596,9 @@ object {
 .blog .entry-header {
   position: relative; }
 
+.blog .site-content {
+  padding-top: 10rem; }
+
 .blog .entry-title {
   position: absolute;
   top: 20px;
@@ -608,9 +611,6 @@ object {
     left: 0;
     position: absolute;
     margin-top: 2.25rem; }
-  .blog .entry-title img {
-    height: auto;
-    max-width: 100%; }
 
 .blog .entry-meta {
   position: absolute;
@@ -622,25 +622,52 @@ footer {
   background: url(../../images/photos/dark-wood.png);
   height: 350px; }
 
-.footer-info {
+.footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-
-.contact-info {
-  color: white; }
-
-.business-hours {
-  color: white;
-  margin-left: 5rem; }
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
 .container {
-  color: green;
-  text-align: center; }
+  font-family: Novecento Sans Web, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: gray; }
 
-.footer-container {
-  max-width: 1120px;
-  margin-left: 10rem; }
+.contact-info {
+  padding: 1.9rem;
+  color: white;
+  font-size: 18px; }
+  .contact-info h3 {
+    color: #d99045;
+    text-transform: uppercase; }
+  .contact-info a {
+    text-decoration: none;
+    color: white; }
+    .contact-info a:hover {
+      color: #d99045; }
+
+.business-hours {
+  font-size: 18px;
+  color: white;
+  margin-left: 5%; }
+  .business-hours h3 {
+    color: #d99045;
+    text-transform: uppercase; }
+
+.text-logo {
+  width: 20%;
+  margin-left: 20%;
+  margin-bottom: 9%; }
 
 .site-header {
   background-color: white;
@@ -685,7 +712,7 @@ footer {
 
 .fp-banner {
   position: relative;
-  margin-bottom: 5rem; }
+  margin-bottom: 3rem; }
 
 .fp-banner-logo {
   position: absolute;
@@ -694,8 +721,16 @@ footer {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
-.product-info h2 {
+.product-info {
   margin-bottom: 5rem; }
+  .product-info h2 {
+    color: black;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3.8rem;
+    font-family: Novecento Sans Web, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
 
 .product-type-blocks {
   display: -webkit-box;
@@ -703,26 +738,63 @@ footer {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center; }
+          justify-content: space-between; }
+  .product-type-blocks a:hover {
+    background-color: #19625d; }
   .product-type-blocks .product-type-block-wrapper {
-    width: 17%;
-    border: 1px solid gray;
+    border: 1px solid #e1e1e1;
     border-top-width: 6px;
-    margin: 0 0.5rem;
-    text-align: center; }
+    margin: 0 4rem;
+    text-align: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
+    max-width: 25%;
+    padding: 0.75rem; }
+    .product-type-blocks .product-type-block-wrapper:hover {
+      border: 1px solid #d99045;
+      border-top-width: 6px; }
+  .product-type-blocks p {
+    color: #404040;
+    font-family: Merriweather Web, serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
+    text-transform: none; }
   .product-type-blocks img {
     width: 25%; }
+  .product-type-blocks a {
+    text-decoration: none;
+    background-color: #248a83;
+    padding: 1rem;
+    color: white;
+    font-family: Novecento Sans Web, sans-serif;
+    padding: 0.8rem 1.5rem; }
+  .product-type-blocks .btn {
+    text-transform: uppercase; }
 
 .inhabitent-journal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .inhabitent-journal .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+
+.shop-product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem; }
 
 body {
   min-height: 100vh; }

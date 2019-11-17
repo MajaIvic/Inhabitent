@@ -37,12 +37,15 @@ get_header(); ?>
                 $posts = get_posts( $args ); // returns an array of posts
             ?>
             <div class="inhabitent-journal">
+            <h2>inhabitent journal</h2>
+            <div class="container">
 
             <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
             <?php  the_title('<a href="//localhost:3000/inhabitent/journal/">', '</a>'); ?>
             <?php the_post_thumbnail(   'feature-post size'    ); ?>
             
             <?php endforeach; wp_reset_postdata(); ?>
+               </div>
             </div>
 
 

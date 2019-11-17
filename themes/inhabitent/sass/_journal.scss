@@ -2,7 +2,9 @@
   .entry-header {
     position: relative;
   }
-
+  .site-content {
+    padding-top: 10rem;
+  }
   .entry-title {
     position: absolute;
     top: 20px;
@@ -17,11 +19,6 @@
       // padding: ;
       position: absolute;
       margin-top: 2.25rem;
-    }
-
-    img {
-      height: auto;
-      max-width: 100%;
     }
   }
 

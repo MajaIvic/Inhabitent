@@ -4,7 +4,7 @@
 }
 .fp-banner {
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .fp-banner-logo {
   position: absolute;
@@ -13,29 +13,68 @@
   transform: translate(-50%, -50%);
 }
 .product-info {
+  margin-bottom: 5rem;
   h2 {
-    margin-bottom: 5rem;
+    color: black;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3.8rem;
+    font-family: Novecento Sans Web, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
 }
 
 .product-type-blocks {
   display: flex;
   justify-content: space-between;
-  align-content: center;
 
+  a:hover {
+    background-color: #19625d;
+  }
   .product-type-block-wrapper {
-    width: 17%;
-
-    border: 1px solid gray;
+    // width: 17%;
+    border: 1px solid #e1e1e1;
     border-top-width: 6px;
-    margin: 0 0.5rem;
+    margin: 0 4rem;
     text-align: center;
+    flex: 0 1 25%;
+    max-width: 25%;
+    padding: 0.75rem;
+    &:hover {
+      border: 1px solid #d99045;
+      border-top-width: 6px;
+    }
+  }
+  p {
+    color: #404040;
+    font-family: Merriweather Web, serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
+    text-transform: none;
   }
   img {
     width: 25%;
   }
+  a {
+    text-decoration: none;
+    background-color: #248a83;
+    padding: 1rem;
+    color: white;
+    font-family: Novecento Sans Web, sans-serif;
+
+    padding: 0.8rem 1.5rem;
+  }
+  .btn {
+    text-transform: uppercase;
+  }
 }
 .inhabitent-journal {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
 }

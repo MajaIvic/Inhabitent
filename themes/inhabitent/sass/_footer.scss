@@ -2,27 +2,75 @@ footer {
   background: url(../../images/photos/dark-wood.png);
   height: 350px;
 }
-
-.footer-info {
-  display: flex;
-}
-
-.contact-info {
-  color: white;
-}
-
-.business-hours {
-  color: white;
-  margin-left: 5rem;
-}
-
-.container {
-  color: green;
-  text-align: center;
-}
-
 .footer-container {
-  max-width: 1120px;
-
-  margin-left: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
+.container {
+  font-family: Novecento Sans Web, sans-serif;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: gray;
+}
+.contact-info {
+  padding: 1.9rem;
+  color: white;
+  font-size: 18px;
+
+  h3 {
+    color: #d99045;
+    text-transform: uppercase;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: #d99045;
+    }
+  }
+}
+.business-hours {
+  font-size: 18px;
+  color: white;
+  margin-left: 5%;
+  h3 {
+    color: #d99045;
+    text-transform: uppercase;
+  }
+}
+.text-logo {
+  width: 20%;
+  margin-left: 20%;
+  margin-bottom: 9%;
+}
+
+// .footer-info {
+//   display: flex;
+// }
+
+// .contact-info {
+//   color: white;
+// }
+
+// .business-hours {
+//   color: white;
+//   margin-left: 5rem;
+// }
+
+// .footer-container {
+//   max-width: 1120px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+// .container {
+//   font-family: Novecento Sans Web, sans-serif;
+//   margin-top: 5rem;
+//   text-align: center;
+//   text-transform: uppercase;
+
+//   color: gray;
+// }
