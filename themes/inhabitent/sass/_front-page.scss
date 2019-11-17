@@ -1,7 +1,8 @@
-.fp-banner-img {
+.fp-banner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)),
     #969696 url(../../images/home-hero.jpg) no-repeat top;
 }
+
 .fp-banner {
   position: relative;
   margin-bottom: 3rem;
@@ -33,14 +34,13 @@
     background-color: #19625d;
   }
   .product-type-block-wrapper {
-    // width: 17%;
     border: 1px solid #e1e1e1;
     border-top-width: 6px;
     margin: 0 4rem;
     text-align: center;
-    flex: 0 1 25%;
-    max-width: 25%;
-    padding: 0.75rem;
+    flex: 0 1 23%;
+    max-width: 23%;
+    padding: 0.3rem;
     &:hover {
       border: 1px solid #d99045;
       border-top-width: 6px;
@@ -55,7 +55,7 @@
     text-transform: none;
   }
   img {
-    width: 25%;
+    width: 40%;
   }
   a {
     text-decoration: none;

@@ -618,6 +618,12 @@ object {
   right: 0;
   color: white; }
 
+.content-area {
+  min-width: 70%; }
+
+.widget-area {
+  border-left: 1px black solid; }
+
 footer {
   background: url(../../images/photos/dark-wood.png);
   height: 350px; }
@@ -641,7 +647,7 @@ footer {
   font-family: Novecento Sans Web, sans-serif;
   text-align: center;
   text-transform: uppercase;
-  color: gray; }
+  color: white; }
 
 .contact-info {
   padding: 1.9rem;
@@ -650,6 +656,8 @@ footer {
   .contact-info h3 {
     color: #d99045;
     text-transform: uppercase; }
+  .contact-info p {
+    font-family: Merriweather Web, serif; }
   .contact-info a {
     text-decoration: none;
     color: white; }
@@ -663,6 +671,8 @@ footer {
   .business-hours h3 {
     color: #d99045;
     text-transform: uppercase; }
+  .business-hours p {
+    font-family: Merriweather Web, serif; }
 
 .text-logo {
   width: 20%;
@@ -682,12 +692,14 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline; }
+  .site-header .site-branding {
+    padding-left: 10em; }
   .site-header .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -695,7 +707,13 @@ footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    padding-right: 10em; }
+    .site-header .menu li {
+      padding-right: 15px;
+      text-transform: uppercase; }
+      .site-header .menu li a {
+        color: #248a83; }
   .site-header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -706,7 +724,7 @@ footer {
   .site-header a {
     text-decoration: none; }
 
-.fp-banner-img {
+.fp-banner {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top; }
 
@@ -747,10 +765,10 @@ footer {
     margin: 0 4rem;
     text-align: center;
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 25%;
-            flex: 0 1 25%;
-    max-width: 25%;
-    padding: 0.75rem; }
+        -ms-flex: 0 1 23%;
+            flex: 0 1 23%;
+    max-width: 23%;
+    padding: 0.3rem; }
     .product-type-blocks .product-type-block-wrapper:hover {
       border: 1px solid #d99045;
       border-top-width: 6px; }
@@ -762,7 +780,7 @@ footer {
     line-height: 1.75;
     text-transform: none; }
   .product-type-blocks img {
-    width: 25%; }
+    width: 40%; }
   .product-type-blocks a {
     text-decoration: none;
     background-color: #248a83;
@@ -790,11 +808,41 @@ footer {
         -ms-flex-direction: row;
             flex-direction: row; }
 
+.attachment-post-thumbnail {
+  height: 100vh; }
+
+.entry-content {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  width: 800px;
+  font-family: Merriweather Web, serif;
+  line-height: 1.75; }
+  .entry-content h4 {
+    font-family: Novecento Sans Web, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2rem; }
+  .entry-content p {
+    font-size: 1.23rem; }
+
+.page-header h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 5em;
+  font-size: 2.5rem; }
+
 .shop-product {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
-  margin-bottom: 1.5rem; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .shop-product article {
+    width: 25%; }
+
+.contact-side a {
+  color: black; }
 
 body {
   min-height: 100vh; }

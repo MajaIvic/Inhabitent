@@ -1,0 +1,22 @@
+.attachment-post-thumbnail {
+  height: 100vh;
+}
+
+.entry-content {
+  align-content: center;
+  text-align: center;
+
+  width: 800px;
+  font-family: Merriweather Web, serif;
+  line-height: 1.75;
+
+  h4 {
+    font-family: Novecento Sans Web, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.23rem;
+  }
+}

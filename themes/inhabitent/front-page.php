@@ -41,8 +41,11 @@ get_header(); ?>
             <div class="container">
 
             <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
-            <?php  the_title('<a href="//localhost:3000/inhabitent/journal/">', '</a>'); ?>
+            <div class="journal-front">
             <?php the_post_thumbnail(   'feature-post size'    ); ?>
+            <?php  the_title('<a href="//localhost:3000/inhabitent/journal/">', '</a>'); ?>
+  
+               </div>
             
             <?php endforeach; wp_reset_postdata(); ?>
                </div>

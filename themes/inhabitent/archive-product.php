@@ -13,11 +13,24 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-			
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+			<h2>shop stuff</h2>
+			<?php
+               $terms = get_terms( array(
+                   'taxonomy' => 'product_type',
+                   'hide_empty' => 0,
+               ) );
+               if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+            ?>
+               <div class="product-type-blocks">
+				  <?php foreach ( $terms as $term ) : ?>
+                    
+                       
+                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?></a></p>
+                     
+                  <?php endforeach; ?>
+               </div>
+            <?php endif; ?>
+
 				
 			</header><!-- .page-header -->
 			<div class=shop-product>
@@ -26,7 +39,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content', 'shop' );
 				?>
 
 			<?php endwhile; ?>

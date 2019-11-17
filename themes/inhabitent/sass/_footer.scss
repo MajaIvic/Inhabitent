@@ -14,7 +14,7 @@ footer {
   text-align: center;
   text-transform: uppercase;
 
-  color: gray;
+  color: white;
 }
 .contact-info {
   padding: 1.9rem;
@@ -24,6 +24,9 @@ footer {
   h3 {
     color: #d99045;
     text-transform: uppercase;
+  }
+  p {
+    font-family: Merriweather Web, serif;
   }
   a {
     text-decoration: none;
@@ -41,36 +44,12 @@ footer {
     color: #d99045;
     text-transform: uppercase;
   }
+  p {
+    font-family: Merriweather Web, serif;
+  }
 }
 .text-logo {
   width: 20%;
   margin-left: 20%;
   margin-bottom: 9%;
 }
-
-// .footer-info {
-//   display: flex;
-// }
-
-// .contact-info {
-//   color: white;
-// }
-
-// .business-hours {
-//   color: white;
-//   margin-left: 5rem;
-// }
-
-// .footer-container {
-//   max-width: 1120px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-// .container {
-//   font-family: Novecento Sans Web, sans-serif;
-//   margin-top: 5rem;
-//   text-align: center;
-//   text-transform: uppercase;
-
-//   color: gray;
-// }
