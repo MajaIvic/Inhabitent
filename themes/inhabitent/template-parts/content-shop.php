@@ -9,12 +9,15 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			   <a href=<?php echo get_permalink() ?> rel="bookmark"><?php the_post_thumbnail( 'large' ); ?></a>
-		<?php endif; ?>
+
+	    <div class="shop-img">
+			<?php if ( has_post_thumbnail() ) : ?>
+				<a href=<?php echo get_permalink() ?> rel="bookmark"><?php the_post_thumbnail( 'large' ); ?></a>
+			<?php endif; ?>
+		</div>
 
 		<?php the_title( '<h2 class="entry-title">','</h2>' );?>
-<h2><?php the_field('price'); ?></h2>
+		<h2><?php the_field('price'); ?></h2>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">

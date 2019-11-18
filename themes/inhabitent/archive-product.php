@@ -21,7 +21,7 @@ get_header(); ?>
                ) );
                if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
             ?>
-               <div class="product-type-blocks">
+               <div class="product-category">
 				  <?php foreach ( $terms as $term ) : ?>
                     
                        
@@ -33,7 +33,7 @@ get_header(); ?>
 
 				
 			</header><!-- .page-header -->
-			<div class=shop-product>
+			<div class="shop-product">
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

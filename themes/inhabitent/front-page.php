@@ -9,6 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+         <div  class="front-page-content">
 
 
 			<section class="product-info container">
@@ -54,7 +55,9 @@ get_header(); ?>
 
 
 		</main><!-- #main -->
-				</div><!-- #primary -->
+            </div><!-- #primary -->
+           
 
 			
-			<?php get_footer(); ?>
+         <?php get_footer(); ?>
+         <div>

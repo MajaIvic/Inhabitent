@@ -69,17 +69,17 @@
 			
 
 			} elseif (is_page('about')) {
-				if ( has_post_thumbnail() ) {
-					the_title();
-					the_post_thumbnail();
-				} 
+				if ( has_post_thumbnail() ) { ?>
+					<div class="about-page">
+						<h1 class="hero-title">
+							<?php the_title(); ?>
+						</h1>
+						<?php the_post_thumbnail(); ?>
+					</div>
+				<?php } 
 				
 				//do something
-			}
-
-
-			
-			?>
+			} ?>
 
 			<div id="content" class="site-content">
 			

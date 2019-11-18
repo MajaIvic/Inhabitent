@@ -2,8 +2,8 @@
   h2 {
     text-align: center;
     text-transform: uppercase;
-    padding-top: 5em;
-    font-size: 2.5rem;
+
+    font-size: 2.3rem;
   }
 }
 
@@ -12,5 +12,34 @@
   flex-wrap: wrap;
   article {
     width: 25%;
+  }
+}
+.entry-header {
+  .shop-img {
+    overflow: hidden;
+    height: 200px;
+
+    img {
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+  border: 1px solid #e1e1e1;
+
+  margin: 0 1rem;
+  text-align: center;
+}
+// .content-area {
+//   padding: 5em;
+// }
+.product-category {
+  display: flex;
+  align-content: center;
+
+  a {
+    color: #248a83;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 }
