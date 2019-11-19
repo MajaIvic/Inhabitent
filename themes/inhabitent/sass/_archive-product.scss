@@ -1,5 +1,5 @@
 .page-header {
-  h2 {
+  h1 {
     text-align: center;
     text-transform: uppercase;
 
@@ -14,12 +14,14 @@
     width: 25%;
   }
 }
-.entry-header {
+.post-type-archive-product .entry-header {
   .shop-img {
     overflow: hidden;
     height: 200px;
 
     img {
+      border: 1px solid #e1e1e1;
+      border-bottom-width: 6px;
       min-width: 100%;
       min-height: 100%;
       object-fit: cover;
@@ -35,11 +37,32 @@
 // }
 .product-category {
   display: flex;
-  align-content: center;
+  justify-content: center;
+  align-items: space-between;
+  padding-bottom: 4rem;
+  p {
+    font-size: 1.2em;
+    padding: 0 2rem;
+  }
 
   a {
     color: #248a83;
     text-decoration: none;
     text-transform: uppercase;
+  }
+}
+.title-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h2 {
+    padding-left: 1em;
+    font-size: 1.2rem;
+    font-family: Merriweather Web, serif;
+    text-transform: capitalize;
+  }
+  p {
+    padding-right: 1em;
   }
 }

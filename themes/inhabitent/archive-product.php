@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-			<h2>shop stuff</h2>
+			<h1>shop stuff</h1>
 			<?php
                $terms = get_terms( array(
                    'taxonomy' => 'product_type',
@@ -25,7 +25,7 @@ get_header(); ?>
 				  <?php foreach ( $terms as $term ) : ?>
                     
                        
-                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?></a></p>
+        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?></a></p>
                      
                   <?php endforeach; ?>
                </div>

@@ -15,9 +15,9 @@
 				<a href=<?php echo get_permalink() ?> rel="bookmark"><?php the_post_thumbnail( 'large' ); ?></a>
 			<?php endif; ?>
 		</div>
-
+<div class="title-price">
 		<?php the_title( '<h2 class="entry-title">','</h2>' );?>
-		<h2><?php the_field('price'); ?></h2>
+		<p><?php the_field('price'); ?></p>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">

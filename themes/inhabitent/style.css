@@ -594,32 +594,24 @@ object {
 
 /* Front page */
 .blog .entry-header {
+  border: unset;
   position: relative; }
-
-.blog .entry-title {
-  position: absolute;
-  top: 20px;
-  left: 10px; }
-  .blog .entry-title a {
-    text-decoration: none;
-    background-color: #248a83;
-    color: #fff;
-    font-size: 2.1rem;
-    left: 0;
+  .blog .entry-header .entry-title {
     position: absolute;
-    margin-top: 2.25rem; }
+    top: 0;
+    left: 0; }
+  .blog .entry-header .entry-meta {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .blog .entry-header img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%; }
 
-.blog .entry-meta {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  color: white; }
-
-.content-area {
-  min-width: 70%; }
-
-.widget-area {
-  border-left: 1px black solid; }
+.blog .content-area {
+  padding-right: 2.65rem; }
 
 footer {
   background: url(../../images/photos/dark-wood.png);
@@ -831,7 +823,7 @@ footer {
   font-size: 3rem;
   letter-spacing: 2px; }
 
-.page-header h2 {
+.page-header h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 2.3rem; }
@@ -845,14 +837,16 @@ footer {
   .shop-product article {
     width: 25%; }
 
-.entry-header {
+.post-type-archive-product .entry-header {
   border: 1px solid #e1e1e1;
   margin: 0 1rem;
   text-align: center; }
-  .entry-header .shop-img {
+  .post-type-archive-product .entry-header .shop-img {
     overflow: hidden;
     height: 200px; }
-    .entry-header .shop-img img {
+    .post-type-archive-product .entry-header .shop-img img {
+      border: 1px solid #e1e1e1;
+      border-bottom-width: 6px;
       min-width: 100%;
       min-height: 100%;
       -o-object-fit: cover;
@@ -862,12 +856,39 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  padding-bottom: 4rem; }
+  .product-category p {
+    font-size: 1.2em;
+    padding: 0 2rem; }
   .product-category a {
     color: #248a83;
     text-decoration: none;
     text-transform: uppercase; }
+
+.title-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .title-price h2 {
+    padding-left: 1em;
+    font-size: 1.2rem;
+    font-family: Merriweather Web, serif;
+    text-transform: capitalize; }
+  .title-price p {
+    padding-right: 1em; }
 
 .contact-side a {
   color: black; }
