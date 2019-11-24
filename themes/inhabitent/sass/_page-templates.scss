@@ -13,6 +13,22 @@
 
 // Journal Page
 .blog {
+  article {
+    margin-bottom: 3em;
+  }
+  .read-entry {
+    border: 1px solid black;
+    color: black;
+    width: 10em;
+    text-align: center;
+    padding: 7px;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .entry-content {
+    padding: 0;
+  }
   .entry-header {
     border: unset;
     position: relative;
@@ -21,11 +37,26 @@
       position: absolute;
       top: 0;
       left: 0;
+      background-color: #248a83;
+      height: 5em;
+      width: 24em;
+      padding: 0.8em;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+      }
     }
     .entry-meta {
       position: absolute;
-      bottom: 0;
+      bottom: 7px;
       right: 0;
+      background-color: #248a83;
+      height: 2em;
+      color: white;
+      text-transform: uppercase;
+      padding: 0.2em 1em;
     }
 
     img {
@@ -36,6 +67,6 @@
   } // .entry-header
 
   .content-area {
-    padding-right: 2.65rem;
+    padding-right: 10rem;
   }
 }

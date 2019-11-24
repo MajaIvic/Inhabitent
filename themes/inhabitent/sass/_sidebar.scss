@@ -1,5 +1,27 @@
 .contact-side {
+  i {
+    padding-right: 10px;
+  }
   a {
     color: black;
+    text-decoration: none;
+
+    &:hover {
+      color: #d99045;
+    }
   }
+  .a-info {
+    color: #248a83;
+  }
+}
+.sidebar-section {
+  border-left: 1px solid #e1e1e1;
+  min-width: 30%;
+  padding-top: 3em;
+  padding-left: 3em;
+}
+.widget-title {
+  text-transform: uppercase;
+  color: black;
+  font-size: 27px;
 }
