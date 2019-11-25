@@ -366,67 +366,66 @@ table {
 --------------------------------------------------------------*/
 /* Buttons */
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  background: #248a83;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 14.4px;
+  font-size: 0.9rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
   button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
+  input[type='button']:hover,
+  input[type='reset']:hover,
+  input[type='submit']:hover {
     border-color: #ccc #bbb #aaa;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
   button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
+  input[type='button']:active,
+  input[type='button']:focus,
+  input[type='reset']:active,
+  input[type='reset']:focus,
+  input[type='submit']:active,
+  input[type='submit']:focus {
     border-color: #aaa #bbb #bbb;
     -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
             box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
 /* Fields */
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
 textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
+  input[type='text']:focus,
+  input[type='email']:focus,
+  input[type='url']:focus,
+  input[type='password']:focus,
+  input[type='search']:focus,
   textarea:focus {
     color: #111; }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-  padding: 3px; }
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'] {
+  padding: 8px 15px; }
 
 textarea {
   padding-left: 3px;
-  width: 100%; }
+  width: 82%; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -550,13 +549,15 @@ textarea {
 embed,
 iframe,
 object {
-  max-width: 100%; }
+  width: 44em;
+  height: 17em;
+  border: none; }
 
 /* Captions */
 .wp-caption {
   margin-bottom: 1.5rem;
   max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
+  .wp-caption img[class*='wp-image-'] {
     display: block;
     margin-left: auto;
     margin-right: auto; }
@@ -911,10 +912,12 @@ footer {
   position: absolute; }
 
 .latest-adventure .canoe-girl {
+  background-image: url("../../images/photos/canoe-girl.jpg");
   height: 300px;
   width: 200px; }
 
 .latest-adventure .beach-bonfire {
+  background-image: url("../../images/photos/beach-bonfire.jpg");
   height: 300px;
   width: 200px; }
 
@@ -1008,6 +1011,17 @@ footer {
   .title-price p {
     padding-right: 1em; }
 
+.admin-bar h3 {
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+  font-family: Novecento Sans Web, sans-serif; }
+
+.admin-bar label {
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase; }
+
 .contact-side i {
   padding-right: 10px; }
 
@@ -1037,6 +1051,17 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.admin-bar h3 {
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+  font-family: Novecento Sans Web, sans-serif; }
+
+.admin-bar label {
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase; }
 
 body {
   min-height: 100vh; }

@@ -28,16 +28,27 @@
 					<a href="<?php echo home_url(); ?>">
                     <img class="tent-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" />
 				</a>
+			
+</div>
+
          
 			</div>
-
+			<div class="top-navigation">
+			
 			<nav id="site-navigation" class="main-navigation" role="navigation">
+			<div class ="main-search-form">
+						<?php get_search_form( );?>
+					</div>
+
+
+
+			
 
 					<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
-				</div><!-- .site-branding -->
-				
+			
+					</div><!-- .site-branding -->
 
-
+					
 				
 
 
@@ -52,6 +63,7 @@
 					
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
+				
 			</header><!-- #masthead -->
 			<?php
 
