@@ -240,14 +240,22 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both; }
 
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -267,16 +275,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -601,10 +614,14 @@ object {
   color: black;
   width: 10em;
   text-align: center;
-  padding: 7px;
+  padding: 0.75rem 1.5rem;
   font-size: 15px;
   text-decoration: none;
   text-transform: uppercase; }
+  .blog .read-entry:hover {
+    background: #248a83;
+    border: none;
+    color: white; }
 
 .blog .entry-content {
   padding: 0; }
@@ -902,7 +919,6 @@ footer {
   width: 200px; }
 
 .entry-content {
-  padding: 0 11em;
   font-family: Merriweather Web, serif;
   line-height: 1.75; }
   .entry-content h4 {
@@ -1014,6 +1030,13 @@ footer {
   text-transform: uppercase;
   color: black;
   font-size: 27px; }
+  .widget-title p {
+    font-family: Merriweather Web, serif; }
+
+.archive-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 body {
   min-height: 100vh; }
