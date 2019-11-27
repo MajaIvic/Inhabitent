@@ -1,11 +1,6 @@
 .fp-banner {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)),
-    #969696 url(../../images/home-hero.jpg) no-repeat top;
-}
-
-.fp-banner {
-  position: relative;
-  margin-bottom: 3rem;
+  height: 100vh;
+  background-size: cover;
 }
 .fp-banner-logo {
   position: absolute;
@@ -140,15 +135,100 @@
   }
 }
 
-.latest-adventure {
-  .canoe-girl {
-    background-image: url('../../images/photos/canoe-girl.jpg');
-    height: 300px;
-    width: 200px;
+.adventures-container {
+  h2 {
+    margin-top: 2em;
+
+    text-transform: uppercase;
+    text-align: center;
+    color: #404040;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3.75rem;
   }
-  .beach-bonfire {
-    background-image: url('../../images/photos/beach-bonfire.jpg');
-    height: 300px;
-    width: 200px;
+
+  .latest-adventure {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 'canoe-girl canoe-girl beach-bonfire beach-bonfire' 'canoe-girl canoe-girl mountain-hikers night-sky' '. . . .';
+    height: 60vmax;
+    grid-gap: 10px;
+    h3 {
+      padding-left: 23px;
+      font-family: 'Merriweather Web', serif;
+      font-weight: 400;
+      color: white;
+    }
+    a {
+      margin-left: 23px;
+      border: 1px solid white;
+      color: white;
+      width: 10em;
+      text-align: center;
+      padding: 0.75rem 1.5rem;
+      font-size: 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover {
+        background: #248a83;
+        border: none;
+        color: white;
+      }
+    }
+
+    .canoe-girl {
+      grid-area: canoe-girl;
+
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.4) 0,
+          rgba(0, 0, 0, 0.4)
+        ),
+        url('../../images/photos/canoe-girl.jpg');
+      background-color: #969696;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top, center;
+    }
+    .beach-bonfire {
+      grid-area: beach-bonfire;
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.4) 0,
+          rgba(0, 0, 0, 0.4)
+        ),
+        url('../../images/photos/beach-bonfire.jpg');
+      background-color: #969696;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top, center;
+    }
+    .mountain-hikers {
+      grid-area: mountain-hikers;
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.4) 0,
+          rgba(0, 0, 0, 0.4)
+        ),
+        url('../../images/photos/mountain-hikers.jpg');
+      background-color: #969696;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top, center;
+    }
+    .night-sky {
+      grid-area: night-sky;
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.4) 0,
+          rgba(0, 0, 0, 0.4)
+        ),
+        url('../../images/photos/night-sky.jpg');
+      background-color: #969696;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top, center;
+    }
   }
 }

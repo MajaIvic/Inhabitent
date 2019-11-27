@@ -703,50 +703,47 @@ footer {
 .site-content {
   padding: 8em; }
 
-.site-header {
+header {
   background-color: white;
   opacity: 0.69;
   position: fixed;
   z-index: 99;
   width: 100%;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline; }
-  .site-header .site-branding {
-    padding-left: 10em; }
-  .site-header .menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  header .site-branding {
+    width: 70px;
+    height: 60px;
+    margin-left: 10em; }
+  header nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding-right: 10em; }
-    .site-header .menu li {
-      padding-right: 15px;
-      text-transform: uppercase; }
-      .site-header .menu li a {
-        color: #248a83; }
-  .site-header .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 4rem; }
-  .site-header li {
-    list-style: none; }
-  .site-header a {
-    text-decoration: none; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 100px; }
+    header nav .menu-main-menu-container ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0; }
+      header nav .menu-main-menu-container ul li {
+        padding-right: 20px;
+        list-style: none; }
+        header nav .menu-main-menu-container ul li a {
+          text-transform: uppercase;
+          color: #21759b; }
+          header nav .menu-main-menu-container ul li a:visited {
+            color: #21759b; }
 
 .single-journal {
   padding-right: 5em; }
@@ -797,12 +794,8 @@ footer {
       height: 100%; }
 
 .fp-banner {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top; }
-
-.fp-banner {
-  position: relative;
-  margin-bottom: 3rem; }
+  height: 100vh;
+  background-size: cover; }
 
 .fp-banner-logo {
   position: absolute;
@@ -944,15 +937,73 @@ footer {
   bottom: 13px;
   position: absolute; }
 
-.latest-adventure .canoe-girl {
-  background-image: url("../../images/photos/canoe-girl.jpg");
-  height: 300px;
-  width: 200px; }
+.adventures-container h2 {
+  margin-top: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #404040;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3.75rem; }
 
-.latest-adventure .beach-bonfire {
-  background-image: url("../../images/photos/beach-bonfire.jpg");
-  height: 300px;
-  width: 200px; }
+.adventures-container .latest-adventure {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 'canoe-girl canoe-girl beach-bonfire beach-bonfire' 'canoe-girl canoe-girl mountain-hikers night-sky' '. . . .';
+  height: 60vmax;
+  grid-gap: 10px; }
+  .adventures-container .latest-adventure h3 {
+    padding-left: 23px;
+    font-family: 'Merriweather Web', serif;
+    font-weight: 400;
+    color: white; }
+  .adventures-container .latest-adventure a {
+    margin-left: 23px;
+    border: 1px solid white;
+    color: white;
+    width: 10em;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .adventures-container .latest-adventure a:hover {
+      background: #248a83;
+      border: none;
+      color: white; }
+  .adventures-container .latest-adventure .canoe-girl {
+    grid-area: canoe-girl;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/photos/canoe-girl.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../images/photos/canoe-girl.jpg");
+    background-color: #969696;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top, center; }
+  .adventures-container .latest-adventure .beach-bonfire {
+    grid-area: beach-bonfire;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/photos/beach-bonfire.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../images/photos/beach-bonfire.jpg");
+    background-color: #969696;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top, center; }
+  .adventures-container .latest-adventure .mountain-hikers {
+    grid-area: mountain-hikers;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/photos/mountain-hikers.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../images/photos/mountain-hikers.jpg");
+    background-color: #969696;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top, center; }
+  .adventures-container .latest-adventure .night-sky {
+    grid-area: night-sky;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/photos/night-sky.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../images/photos/night-sky.jpg");
+    background-color: #969696;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top, center; }
 
 .entry-content {
   font-family: Merriweather Web, serif;
@@ -1096,7 +1147,22 @@ footer {
   margin-bottom: 0.5rem;
   text-transform: uppercase; }
 
+.text-entry {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+  .text-entry p {
+    padding-top: 2em;
+    color: #404040;
+    font-family: Merriweather Web, serif;
+    text-transform: none;
+    font-size: 1rem;
+    line-height: 1.75; }
+
 .four-product {
+  padding-top: 4em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1122,6 +1188,67 @@ footer {
       .four-product .entry-header .shop-img img {
         height: 100%;
         max-width: 100%; }
+
+.single-shop article {
+  padding-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .single-shop article .single-shop-page {
+    width: 49%;
+    margin-left: 6em; }
+    .single-shop article .single-shop-page h1 {
+      color: #d99054;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    .single-shop article .single-shop-page h2 {
+      font-weight: 400; }
+    .single-shop article .single-shop-page p {
+      font-size: 19px; }
+  .single-shop article header img {
+    margin-top: 2em;
+    height: 30rem;
+    max-width: 100%; }
+
+.search-page h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  text-align: left; }
+
+.search-page h2 a {
+  color: #248a83;
+  text-decoration: none;
+  font-size: 2.1rem;
+  text-transform: uppercase; }
+
+.search-page .search-read-me {
+  border: 1px solid black;
+  color: black;
+  width: 10em;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .search-page .search-read-me:hover {
+    background: #248a83;
+    border: none;
+    color: white; }
+
+.search-pagination .page-numbers {
+  background-color: #248a83;
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  padding: 0.5rem 0.75rem;
+  margin-right: 0.25rem;
+  text-align: center; }
+  .search-pagination .page-numbers:hover {
+    background: purple; }
 
 body {
   min-height: 100vh; }

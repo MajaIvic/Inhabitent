@@ -1,4 +1,21 @@
+.text-entry {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  p {
+    padding-top: 2em;
+    color: #404040;
+    font-family: Merriweather Web, serif;
+    text-transform: none;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+}
+
 .four-product {
+  padding-top: 4em;
   display: flex;
   flex-direction: row;
   article {

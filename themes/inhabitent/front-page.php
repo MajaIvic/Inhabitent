@@ -9,7 +9,18 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-         <div  class="front-page-content">
+
+      <?php
+				if ( has_post_thumbnail() ) { ?>
+        
+      <?php } ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+         <?php endwhile; // End of the loop. ?>
+
+
+        
+        <div  class="front-page-content">
 
 
 			<section class="product-info container">
@@ -64,12 +75,13 @@ get_header(); ?>
 
 
            
-            <section class="adventures container">
+            <section class="adventures-container">
             <h2>Latest Adventures</h2>
+            
             <div class="latest-adventure">
                
             <div class="canoe-girl">
-               <img src="../../inhabitent/images/photos/canoe-girl.jpg"/>
+               
             <h3>Getting Back to Nature in a Canoe</h3>
             
                <a href="#">Read more</a>
@@ -79,7 +91,7 @@ get_header(); ?>
             
                <a href="#">Read more</a>
                </div>
-               <div class="mountain-hiker">
+               <div class="mountain-hikers">
             <h3>Taking in the View at Big Mountain</h3>
             
                <a href="#">Read more</a>

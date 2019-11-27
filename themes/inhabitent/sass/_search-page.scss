@@ -1,0 +1,40 @@
+.search-page {
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+  h2 a {
+    color: #248a83;
+    text-decoration: none;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+  }
+  .search-read-me {
+    border: 1px solid black;
+    color: black;
+    width: 10em;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      background: #248a83;
+      border: none;
+      color: white;
+    }
+  }
+}
+.search-pagination .page-numbers {
+  background-color: #248a83;
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  padding: 0.5rem 0.75rem;
+  margin-right: 0.25rem;
+  text-align: center;
+  &:hover {
+    background: purple;
+  }
+}

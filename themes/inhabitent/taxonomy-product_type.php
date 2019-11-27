@@ -10,15 +10,18 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
+		<h2 class="text-entry">
+	
+			<?php echo $term; ?>
+			<?php echo term_description(); ?>
+</h2>
+
 		
 
 		<?php if ( have_posts() ) : ?>
+			<div class="four-product">
 
-		<h2 class="entry-title">
-		
-			<?php echo get_the_archive_title(  )?>
-</h2>
-<div class="four-product">
 			
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

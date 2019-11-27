@@ -17,7 +17,7 @@
 		</div>
 <div class="title-price">
 		<?php the_title( '<h2 class="entry-title">','</h2>' );?>
-		<p><?php the_field('price'); ?></p>
+		<p>$<?php the_field('price'); ?></p>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
