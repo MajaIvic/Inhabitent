@@ -1005,6 +1005,19 @@ footer {
     background-size: cover;
     background-position: top, center; }
 
+.adventures-container .see-more {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
 .entry-content {
   font-family: Merriweather Web, serif;
   line-height: 1.75; }
@@ -1131,6 +1144,59 @@ footer {
   .widget-title p {
     font-family: Merriweather Web, serif; }
 
+.page-ar .archive-content {
+  display: block; }
+
+.read-entry {
+  border: 1px solid black;
+  color: black;
+  width: 10em;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .read-entry:hover {
+    background: #248a83;
+    border: none;
+    color: white; }
+
+.entry-content {
+  padding: 0; }
+
+.archive.date .content-area {
+  padding-right: 10rem; }
+
+.archive.date .entry-header {
+  border: unset;
+  position: relative; }
+  .archive.date .entry-header .entry-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #248a83;
+    height: 5em;
+    width: 24em;
+    padding: 0.8em; }
+    .archive.date .entry-header .entry-title a {
+      text-decoration: none;
+      color: white;
+      font-size: 30px; }
+  .archive.date .entry-header .entry-meta {
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+    background-color: #248a83;
+    height: 2em;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.2em 1em; }
+  .archive.date .entry-header img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%; }
+
 .admin-bar h3 {
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
@@ -1245,21 +1311,22 @@ footer {
   .search-pagination .page-numbers:hover {
     background: purple; }
 
-.error-404 p {
-  font-family: Merriweather Web, serif; }
-
-.error-404 button {
-  display: none; }
-
-.error-404 ul {
-  font-family: Merriweather Web, serif;
-  margin: 0;
-  padding: 0; }
-  .error-404 ul li {
-    list-style-type: none; }
-    .error-404 ul li a {
-      color: #248a83;
-      text-decoration: none; }
+.error-404 {
+  padding-right: 9em;
+  padding-top: 3.5em; }
+  .error-404 p {
+    font-family: Merriweather Web, serif; }
+  .error-404 button {
+    display: none; }
+  .error-404 ul {
+    font-family: Merriweather Web, serif;
+    margin: 0;
+    padding: 0; }
+    .error-404 ul li {
+      list-style-type: none; }
+      .error-404 ul li a {
+        color: #248a83;
+        text-decoration: none; }
 
 body {
   min-height: 100vh; }

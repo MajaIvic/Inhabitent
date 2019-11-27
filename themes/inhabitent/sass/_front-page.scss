@@ -231,4 +231,18 @@
       background-position: top, center;
     }
   }
+  .see-more {
+    background: #248a83;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: Novecento Sans Web, sans-serif;
+
+    font-size: 0.9rem;
+    line-height: 1;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }
