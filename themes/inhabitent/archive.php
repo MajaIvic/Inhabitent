@@ -11,6 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
+		
 
 			<header class="page-header">
 				<?php
@@ -18,6 +19,7 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
+		
 			<div class="archive-content">
 
 			<?php /* Start the Loop */ ?>
@@ -41,5 +43,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-
+	<?php get_sidebar(); ?>
 <?php get_footer(); ?>

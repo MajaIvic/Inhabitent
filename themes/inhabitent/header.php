@@ -15,11 +15,12 @@
 
 	<?php wp_head(); ?>
 	</head>
+	
 
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
-
+<div class="header-nav">
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<div class="logo">
@@ -36,6 +37,7 @@
 				</div>
 				</nav><!-- #site-navigation -->
 				</header><!-- #masthead -->
+</div>
 					<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
 			<?php
 
@@ -63,6 +65,7 @@
 				
 				//do something
 			} ?>
+			
 
 			<div id="content" class="site-content">
 			
