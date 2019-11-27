@@ -375,7 +375,7 @@ input[type='submit'] {
   color: black;
   width: 8em;
   text-align: center;
-  padding: 5px;
+  padding: 0.75rem 1.5rem;
   font-size: 15px;
   bottom: 13px; }
   button:hover,
@@ -387,9 +387,7 @@ input[type='submit'] {
     color: #fff;
     cursor: pointer;
     font-family: Novecento Sans Web, sans-serif;
-    font-size: 14.4px;
-    font-size: 0.9rem;
-    line-height: 1;
+    font-size: 15px;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     text-transform: uppercase; }
@@ -713,7 +711,7 @@ footer {
   margin-bottom: 9%; }
 
 .site-content {
-  padding: 8em; }
+  padding: 8em 8em 4em 8em; }
 
 .header-nav header {
   background-color: white;
@@ -756,6 +754,17 @@ footer {
           color: #21759b; }
           .header-nav header nav .menu-main-menu-container ul li a:visited {
             color: #21759b; }
+
+.main-search-form .search-field {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  width: 0;
+  border: 0;
+  padding: 0; }
+
+.main-search-form .search-animation {
+  width: 200px;
+  padding: 8px 15px; }
 
 .single-journal .type-post .read-entry {
   border: 1px solid black;
