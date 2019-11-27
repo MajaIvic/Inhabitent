@@ -150,9 +150,9 @@
   .latest-adventure {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 'canoe-girl canoe-girl beach-bonfire beach-bonfire' 'canoe-girl canoe-girl mountain-hikers night-sky' '. . . .';
-    height: 60vmax;
+    height: 50vmax;
     grid-gap: 10px;
     h3 {
       padding-left: 23px;
@@ -232,17 +232,13 @@
     }
   }
   .see-more {
-    background: #248a83;
-    border: none;
-    border-radius: 0;
-    color: #fff;
-    cursor: pointer;
-    font-family: Novecento Sans Web, sans-serif;
-
-    font-size: 0.9rem;
-    line-height: 1;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
+    padding: 0.5em 0;
+    text-align: center;
+    width: 13em;
+    background-color: #248a83;
     text-transform: uppercase;
+    color: #fff;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 25px;
   }
 }

@@ -371,17 +371,28 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  background: #248a83;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-family: Novecento Sans Web, sans-serif;
-  font-size: 14.4px;
-  font-size: 0.9rem;
-  line-height: 1;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase; }
+  border: 1px solid black;
+  color: black;
+  width: 8em;
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  bottom: 13px; }
+  button:hover,
+  input[type='button']:hover,
+  input[type='reset']:hover,
+  input[type='submit']:hover {
+    background: #248a83;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 14.4px;
+    font-size: 0.9rem;
+    line-height: 1;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase; }
 
 /* Fields */
 input[type='text'],
@@ -390,6 +401,7 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea {
+  background-color: #f4f4f4;
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px; }
@@ -745,53 +757,53 @@ footer {
           .header-nav header nav .menu-main-menu-container ul li a:visited {
             color: #21759b; }
 
-.single-journal {
-  padding-right: 5em; }
-  .single-journal .type-post .read-entry {
-    border: 1px solid black;
-    color: black;
-    width: 10em;
-    text-align: center;
-    padding: 0.75rem 1.5rem;
-    font-size: 15px;
-    text-decoration: none;
-    text-transform: uppercase; }
-    .single-journal .type-post .read-entry:hover {
-      background: #248a83;
-      border: none;
-      color: white; }
-  .single-journal .type-post .entry-content {
-    padding: 0; }
-  .single-journal .type-post .entry-header {
-    border: unset;
-    position: relative; }
-    .single-journal .type-post .entry-header .entry-title {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #248a83;
-      height: 5em;
-      width: 22em;
-      padding: 0.8em;
-      color: white; }
-      .single-journal .type-post .entry-header .entry-title a {
-        text-decoration: none;
-        color: white;
-        font-size: 30px; }
-    .single-journal .type-post .entry-header .entry-meta {
-      position: absolute;
-      bottom: 7px;
-      right: 0;
-      background-color: #248a83;
-      height: 2em;
+.single-journal .type-post .read-entry {
+  border: 1px solid black;
+  color: black;
+  width: 10em;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .single-journal .type-post .read-entry:hover {
+    background: #248a83;
+    border: none;
+    color: white; }
+
+.single-journal .type-post .entry-content {
+  padding: 0; }
+
+.single-journal .type-post .entry-header {
+  border: unset;
+  position: relative; }
+  .single-journal .type-post .entry-header .entry-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #248a83;
+    height: 5em;
+    width: 22em;
+    padding: 0.8em;
+    color: white; }
+    .single-journal .type-post .entry-header .entry-title a {
+      text-decoration: none;
       color: white;
-      text-transform: uppercase;
-      padding: 0.2em 1em; }
-    .single-journal .type-post .entry-header img {
-      -o-object-fit: cover;
-         object-fit: cover;
-      width: 100%;
-      height: 100%; }
+      font-size: 30px; }
+  .single-journal .type-post .entry-header .entry-meta {
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+    background-color: #248a83;
+    height: 2em;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.2em 1em; }
+  .single-journal .type-post .entry-header img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%; }
 
 .fp-banner {
   height: 100vh;
@@ -949,9 +961,8 @@ footer {
 .adventures-container .latest-adventure {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 'canoe-girl canoe-girl beach-bonfire beach-bonfire' 'canoe-girl canoe-girl mountain-hikers night-sky' '. . . .';
-  height: 60vmax;
+  height: 50vmax;
   grid-gap: 10px; }
   .adventures-container .latest-adventure h3 {
     padding-left: 23px;
@@ -1006,17 +1017,14 @@ footer {
     background-position: top, center; }
 
 .adventures-container .see-more {
-  background: #248a83;
-  border: none;
-  border-radius: 0;
+  padding: 0.5em 0;
+  text-align: center;
+  width: 13em;
+  background-color: #248a83;
+  text-transform: uppercase;
   color: #fff;
-  cursor: pointer;
   font-family: Novecento Sans Web, sans-serif;
-  font-size: 0.9rem;
-  line-height: 1;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase; }
+  font-size: 25px; }
 
 .entry-content {
   font-family: Merriweather Web, serif;
