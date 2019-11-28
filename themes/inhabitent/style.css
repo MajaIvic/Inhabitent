@@ -785,7 +785,7 @@ footer {
   .single-journal .type-post .read-entry:hover {
     background: #248a83;
     border: none;
-    color: #ffffff; }
+    color: white; }
 
 .single-journal .type-post .entry-content {
   padding: 0; }
@@ -801,10 +801,10 @@ footer {
     height: 5em;
     width: 22em;
     padding: 0.8em;
-    color: #ffffff; }
+    color: white; }
     .single-journal .type-post .entry-header .entry-title a {
       text-decoration: none;
-      color: #ffffff;
+      color: white;
       font-size: 30px; }
   .single-journal .type-post .entry-header .entry-meta {
     position: absolute;
@@ -812,7 +812,7 @@ footer {
     right: 0;
     background-color: #248a83;
     height: 2em;
-    color: #ffffff;
+    color: white;
     text-transform: uppercase;
     padding: 0.2em 1em; }
   .single-journal .type-post .entry-header img {
@@ -1045,15 +1045,10 @@ footer {
 .entry-content {
   font-family: Merriweather Web, serif;
   line-height: 1.75; }
-  .entry-content h2 {
-    text-align: center;
-    font-family: Novecento Sans Web, sans-serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 2rem; }
   .entry-content p {
     font-size: 20px;
-    color: #404040; }
+    color: #404040;
+    font-family: Merriweather Web, serif; }
 
 .about-page h1 {
   position: absolute;
@@ -1066,6 +1061,18 @@ footer {
   font-size: 3rem;
   letter-spacing: 2px;
   text-shadow: 2px 2px gray; }
+
+.post-50 h2 {
+  text-align: center;
+  font-family: Novecento Sans Web, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 2rem; }
+
+.post-50 p {
+  font-size: 20px;
+  color: #404040;
+  font-family: Merriweather Web, serif; }
 
 .page-header h1 {
   text-align: center;
@@ -1135,12 +1142,12 @@ footer {
   .title-price p {
     padding-right: 1em; }
 
-.status-publish .admin-bar h3 {
+.admin-bar h3 {
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
   font-family: Novecento Sans Web, sans-serif; }
 
-.status-publish .admin-bar label {
+.admin-bar label {
   font-family: Novecento Sans Web, sans-serif;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
@@ -1224,12 +1231,12 @@ footer {
     width: 100%;
     height: 100%; }
 
-.status-publish .admin-bar h3 {
+.admin-bar h3 {
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
   font-family: Novecento Sans Web, sans-serif; }
 
-.status-publish .admin-bar label {
+.admin-bar label {
   font-family: Novecento Sans Web, sans-serif;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
