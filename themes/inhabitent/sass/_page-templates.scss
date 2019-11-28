@@ -26,9 +26,9 @@
     text-decoration: none;
     text-transform: uppercase;
     &:hover {
-      background: #248a83;
+      background: $color__green-brand;
       border: none;
-      color: white;
+      color: $color__background;
     }
   }
   .entry-content {
@@ -42,14 +42,14 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-color: #248a83;
+      background-color: $color__green-brand;
       height: 5em;
       width: 24em;
       padding: 0.8em;
 
       a {
         text-decoration: none;
-        color: white;
+        color: $color__background;
         font-size: 30px;
       }
     }
@@ -57,9 +57,9 @@
       position: absolute;
       bottom: 7px;
       right: 0;
-      background-color: #248a83;
+      background-color: $color__green-brand;
       height: 2em;
-      color: white;
+      color: $color__background;
       text-transform: uppercase;
       padding: 0.2em 1em;
     }

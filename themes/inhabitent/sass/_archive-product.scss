@@ -44,7 +44,7 @@
   }
 
   a {
-    color: #248a83;
+    color: $color__green-brand;
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -55,9 +55,10 @@
   justify-content: space-between;
 
   h2 {
+    font-weight: 400;
     padding-left: 1em;
     font-size: 1.2rem;
-    font-family: Merriweather Web, serif;
+    font-family: $font__main;
     text-transform: capitalize;
   }
   p {

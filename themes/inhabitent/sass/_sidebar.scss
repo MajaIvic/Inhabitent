@@ -7,11 +7,11 @@
     text-decoration: none;
 
     &:hover {
-      color: #d99045;
+      color: $color__orange-brand;
     }
   }
   .a-info {
-    color: #248a83;
+    color: $color__green-brand;
   }
 }
 .sidebar-section {
@@ -22,9 +22,9 @@
 }
 .widget-title {
   text-transform: uppercase;
-  color: black;
+  color: $color__purple-brand;
   font-size: 27px;
   p {
-    font-family: Merriweather Web, serif;
+    font-family: $font__main;
   }
 }

@@ -235,8 +235,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: Merriweather Web, serif;
+  color: #2f1339;
+  font-family: Novecento Sans Web, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -617,7 +617,7 @@ object {
   .blog .read-entry:hover {
     background: #248a83;
     border: none;
-    color: white; }
+    color: #ffffff; }
 
 .blog .entry-content {
   padding: 0; }
@@ -635,7 +635,7 @@ object {
     padding: 0.8em; }
     .blog .entry-header .entry-title a {
       text-decoration: none;
-      color: white;
+      color: #ffffff;
       font-size: 30px; }
   .blog .entry-header .entry-meta {
     position: absolute;
@@ -643,7 +643,7 @@ object {
     right: 0;
     background-color: #248a83;
     height: 2em;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     padding: 0.2em 1em; }
   .blog .entry-header img {
@@ -678,29 +678,29 @@ footer {
   font-family: Novecento Sans Web, sans-serif;
   text-align: center;
   text-transform: uppercase;
-  color: white; }
+  color: #ffffff; }
 
 .contact-info {
   padding: 1.9rem;
-  color: white;
+  color: #ffffff;
   font-size: 18px; }
   .contact-info h3 {
-    color: #d99045;
+    color: #d99054;
     text-transform: uppercase; }
   .contact-info p {
     font-family: Merriweather Web, serif; }
   .contact-info a {
     text-decoration: none;
-    color: white; }
+    color: #ffffff; }
     .contact-info a:hover {
-      color: #d99045; }
+      color: #d99054; }
 
 .business-hours {
   font-size: 18px;
-  color: white;
+  color: #ffffff;
   margin-left: 5%; }
   .business-hours h3 {
-    color: #d99045;
+    color: #d99054;
     text-transform: uppercase; }
   .business-hours p {
     font-family: Merriweather Web, serif; }
@@ -742,6 +742,7 @@ footer {
             align-items: center;
     margin-right: 100px; }
     .header-nav header nav .menu-main-menu-container ul {
+      font-family: Novecento Sans Web, sans-serif;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -751,9 +752,9 @@ footer {
         list-style: none; }
         .header-nav header nav .menu-main-menu-container ul li a {
           text-transform: uppercase;
-          color: #21759b; }
+          color: #248a83; }
           .header-nav header nav .menu-main-menu-container ul li a:visited {
-            color: #21759b; }
+            color: #248a83; }
 
 .main-search-form {
   display: -webkit-box;
@@ -784,7 +785,7 @@ footer {
   .single-journal .type-post .read-entry:hover {
     background: #248a83;
     border: none;
-    color: white; }
+    color: #ffffff; }
 
 .single-journal .type-post .entry-content {
   padding: 0; }
@@ -800,10 +801,10 @@ footer {
     height: 5em;
     width: 22em;
     padding: 0.8em;
-    color: white; }
+    color: #ffffff; }
     .single-journal .type-post .entry-header .entry-title a {
       text-decoration: none;
-      color: white;
+      color: #ffffff;
       font-size: 30px; }
   .single-journal .type-post .entry-header .entry-meta {
     position: absolute;
@@ -811,7 +812,7 @@ footer {
     right: 0;
     background-color: #248a83;
     height: 2em;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     padding: 0.2em 1em; }
   .single-journal .type-post .entry-header img {
@@ -834,7 +835,7 @@ footer {
 .product-info {
   margin-bottom: 5rem; }
   .product-info h2 {
-    color: black;
+    color: #2f1339;
     font-size: 2.4rem;
     font-weight: 400;
     margin-bottom: 3.8rem;
@@ -852,7 +853,7 @@ footer {
   .product-type-blocks a:hover {
     background-color: #19625d; }
   .product-type-blocks .product-type-block-wrapper {
-    border: 1px solid #e1e1e1;
+    border: 1px solid #a1a1a1;
     border-top-width: 6px;
     margin: 0 1rem;
     text-align: center;
@@ -862,10 +863,10 @@ footer {
     max-width: 23%;
     padding: 0.3rem; }
     .product-type-blocks .product-type-block-wrapper:hover {
-      border: 1px solid #d99045;
+      border: 1px solid #d99054;
       border-top-width: 6px; }
   .product-type-blocks p {
-    color: #404040;
+    color: #808080;
     font-family: Merriweather Web, serif;
     font-size: 16px;
     font-size: 1rem;
@@ -877,7 +878,7 @@ footer {
     text-decoration: none;
     background-color: #248a83;
     padding: 1rem;
-    color: white;
+    color: #ffffff;
     font-family: Novecento Sans Web, sans-serif;
     padding: 0.8rem 1.5rem; }
   .product-type-blocks .btn {
@@ -914,7 +915,7 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column; }
   .inhabitent-journal h2 {
-    color: #000;
+    color: #2f1339;
     font-size: 2.4rem;
     font-weight: 400;
     margin-bottom: 3.8rem;
@@ -933,7 +934,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 1rem;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #a1a1a1;
   height: 25em;
   position: relative; }
   .journal-front img {
@@ -944,7 +945,7 @@ footer {
     text-decoration: none; }
 
 .journal-date {
-  color: #404040;
+  color: #2f1339;
   text-transform: none;
   font-size: 13px;
   padding-top: 20px; }
@@ -955,8 +956,8 @@ footer {
   font-weight: 900; }
 
 .journal-info-section .read-entry {
-  border: 1px solid black;
-  color: black;
+  border: 1px solid #2f1339;
+  color: #2f1339;
   width: 8em;
   text-align: center;
   padding: 5px;
@@ -968,7 +969,7 @@ footer {
   margin-top: 2em;
   text-transform: uppercase;
   text-align: center;
-  color: #404040;
+  color: #2f1339;
   font-size: 2.4rem;
   font-weight: 400;
   margin-bottom: 3.75rem; }
@@ -981,13 +982,13 @@ footer {
   grid-gap: 10px; }
   .adventures-container .latest-adventure h3 {
     padding-left: 23px;
-    font-family: 'Merriweather Web', serif;
+    font-family: Merriweather Web, serif;
     font-weight: 400;
-    color: white; }
+    color: #ffffff; }
   .adventures-container .latest-adventure a {
     margin-left: 23px;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid #ffffff;
+    color: #ffffff;
     width: 10em;
     text-align: center;
     padding: 0.75rem 1.5rem;
@@ -997,7 +998,7 @@ footer {
     .adventures-container .latest-adventure a:hover {
       background: #248a83;
       border: none;
-      color: white; }
+      color: #ffffff; }
   .adventures-container .latest-adventure .canoe-girl {
     grid-area: canoe-girl;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/photos/canoe-girl.jpg");
@@ -1037,21 +1038,22 @@ footer {
   width: 13em;
   background-color: #248a83;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   font-family: Novecento Sans Web, sans-serif;
   font-size: 25px; }
 
 .entry-content {
   font-family: Merriweather Web, serif;
   line-height: 1.75; }
-  .entry-content h4 {
+  .entry-content h2 {
     text-align: center;
     font-family: Novecento Sans Web, sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 2rem; }
   .entry-content p {
-    font-size: 20px; }
+    font-size: 20px;
+    color: #404040; }
 
 .about-page h1 {
   position: absolute;
@@ -1060,7 +1062,7 @@ footer {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   font-size: 3rem;
   letter-spacing: 2px;
   text-shadow: 2px 2px gray; }
@@ -1125,6 +1127,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .title-price h2 {
+    font-weight: 400;
     padding-left: 1em;
     font-size: 1.2rem;
     font-family: Merriweather Web, serif;
@@ -1132,12 +1135,12 @@ footer {
   .title-price p {
     padding-right: 1em; }
 
-.admin-bar h3 {
+.status-publish .admin-bar h3 {
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
   font-family: Novecento Sans Web, sans-serif; }
 
-.admin-bar label {
+.status-publish .admin-bar label {
   font-family: Novecento Sans Web, sans-serif;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
@@ -1150,7 +1153,7 @@ footer {
   color: black;
   text-decoration: none; }
   .contact-side a:hover {
-    color: #d99045; }
+    color: #d99054; }
 
 .contact-side .a-info {
   color: #248a83; }
@@ -1163,7 +1166,7 @@ footer {
 
 .widget-title {
   text-transform: uppercase;
-  color: black;
+  color: #2f1339;
   font-size: 27px; }
   .widget-title p {
     font-family: Merriweather Web, serif; }
@@ -1221,12 +1224,12 @@ footer {
     width: 100%;
     height: 100%; }
 
-.admin-bar h3 {
+.status-publish .admin-bar h3 {
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
   font-family: Novecento Sans Web, sans-serif; }
 
-.admin-bar label {
+.status-publish .admin-bar label {
   font-family: Novecento Sans Web, sans-serif;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
@@ -1237,13 +1240,15 @@ footer {
   font-size: 2.4rem;
   margin-bottom: 0.5rem;
   letter-spacing: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #404040; }
   .text-entry p {
+    font-weight: 400;
     padding-top: 2em;
     color: #404040;
     font-family: Merriweather Web, serif;
     text-transform: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.75; }
 
 .four-product {
@@ -1325,11 +1330,11 @@ footer {
   .search-page .search-read-me:hover {
     background: #248a83;
     border: none;
-    color: white; }
+    color: #ffffff; }
 
 .search-pagination .page-numbers {
   background-color: #248a83;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   line-height: 1;
   padding: 0.5rem 0.75rem;

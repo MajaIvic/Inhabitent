@@ -9,43 +9,43 @@ footer {
   flex-direction: row;
 }
 .container {
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: $font__header;
 
   text-align: center;
   text-transform: uppercase;
 
-  color: white;
+  color: $color__background;
 }
 .contact-info {
   padding: 1.9rem;
-  color: white;
+  color: $color__background;
   font-size: 18px;
 
   h3 {
-    color: #d99045;
+    color: $color__orange-brand;
     text-transform: uppercase;
   }
   p {
-    font-family: Merriweather Web, serif;
+    font-family: $font__main;
   }
   a {
     text-decoration: none;
-    color: white;
+    color: $color__background;
     &:hover {
-      color: #d99045;
+      color: $color__orange-brand;
     }
   }
 }
 .business-hours {
   font-size: 18px;
-  color: white;
+  color: $color__background;
   margin-left: 5%;
   h3 {
-    color: #d99045;
+    color: $color__orange-brand;
     text-transform: uppercase;
   }
   p {
-    font-family: Merriweather Web, serif;
+    font-family: $font__main;
   }
 }
 .text-logo {

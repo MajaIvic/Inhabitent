@@ -5,7 +5,7 @@
     text-align: left;
   }
   h2 a {
-    color: #248a83;
+    color: $color__green-brand;
     text-decoration: none;
     font-size: 2.1rem;
     text-transform: uppercase;
@@ -20,15 +20,15 @@
     text-decoration: none;
     text-transform: uppercase;
     &:hover {
-      background: #248a83;
+      background: $color__green-brand;
       border: none;
-      color: white;
+      color: $color__background;
     }
   }
 }
 .search-pagination .page-numbers {
-  background-color: #248a83;
-  color: #fff;
+  background-color: $color__green-brand;
+  color: $color__background;
   display: inline-block;
   line-height: 1;
   padding: 0.5rem 0.75rem;

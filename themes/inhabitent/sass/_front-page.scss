@@ -11,11 +11,11 @@
 .product-info {
   margin-bottom: 5rem;
   h2 {
-    color: black;
+    color: $color__purple-brand;
     font-size: 2.4rem;
     font-weight: 400;
     margin-bottom: 3.8rem;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__header;
     letter-spacing: 2px;
     text-transform: uppercase;
   }
@@ -29,7 +29,7 @@
     background-color: #19625d;
   }
   .product-type-block-wrapper {
-    border: 1px solid #e1e1e1;
+    border: 1px solid #a1a1a1;
     border-top-width: 6px;
     margin: 0 1rem;
     text-align: center;
@@ -37,13 +37,13 @@
     max-width: 23%;
     padding: 0.3rem;
     &:hover {
-      border: 1px solid #d99045;
+      border: 1px solid #d99054;
       border-top-width: 6px;
     }
   }
   p {
-    color: #404040;
-    font-family: Merriweather Web, serif;
+    color: $color__medium-gray-brand;
+    font-family: $font__main;
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.75;
@@ -54,10 +54,10 @@
   }
   a {
     text-decoration: none;
-    background-color: #248a83;
+    background-color: $color__green-brand;
     padding: 1rem;
-    color: white;
-    font-family: Novecento Sans Web, sans-serif;
+    color: $color__background;
+    font-family: $font__header;
 
     padding: 0.8rem 1.5rem;
   }
@@ -83,11 +83,11 @@
   }
 
   h2 {
-    color: #000;
+    color: $color__purple-brand;
     font-size: 2.4rem;
     font-weight: 400;
     margin-bottom: 3.8rem;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__header;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
@@ -98,7 +98,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 1rem;
-  border: 1px solid #e1e1e1;
+  border: 1px solid#a1a1a1;
   height: 25em;
   position: relative;
 
@@ -112,20 +112,20 @@
   }
 }
 .journal-date {
-  color: #404040;
+  color: $color__purple-brand;
   text-transform: none;
   font-size: 13px;
   padding-top: 20px;
 }
 .journal-info-section {
   .title {
-    color: #248a83;
+    color: $color__green-brand;
     font-size: 18px;
     font-weight: 900;
   }
   .read-entry {
-    border: 1px solid black;
-    color: black;
+    border: 1px solid $color__purple-brand;
+    color: $color__purple-brand;
     width: 8em;
     text-align: center;
     padding: 5px;
@@ -141,7 +141,7 @@
 
     text-transform: uppercase;
     text-align: center;
-    color: #404040;
+    color: $color__purple-brand;
     font-size: 2.4rem;
     font-weight: 400;
     margin-bottom: 3.75rem;
@@ -156,14 +156,14 @@
     grid-gap: 10px;
     h3 {
       padding-left: 23px;
-      font-family: 'Merriweather Web', serif;
+      font-family: $font__main;
       font-weight: 400;
-      color: white;
+      color: $color__background;
     }
     a {
       margin-left: 23px;
-      border: 1px solid white;
-      color: white;
+      border: 1px solid #ffffff;
+      color: $color__background;
       width: 10em;
       text-align: center;
       padding: 0.75rem 1.5rem;
@@ -171,9 +171,9 @@
       text-decoration: none;
       text-transform: uppercase;
       &:hover {
-        background: #248a83;
+        background: $color__green-brand;
         border: none;
-        color: white;
+        color: $color__background;
       }
     }
 
@@ -235,10 +235,10 @@
     padding: 0.5em 0;
     text-align: center;
     width: 13em;
-    background-color: #248a83;
+    background-color: $color__green-brand;
     text-transform: uppercase;
-    color: #fff;
-    font-family: Novecento Sans Web, sans-serif;
+    color: $color__background;
+    font-family: $font__header;
     font-size: 25px;
   }
 }

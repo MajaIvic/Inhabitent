@@ -24,6 +24,7 @@
       margin-right: 100px;
       .menu-main-menu-container {
         ul {
+          font-family: $font__header;
           display: flex;
           margin: 0;
           li {
@@ -31,9 +32,9 @@
             list-style: none;
             a {
               text-transform: uppercase;
-              color: $color__text-screen;
+              color: $color__green-brand;
               &:visited {
-                color: $color__text-screen;
+                color: $color__green-brand;
               }
             }
           }
