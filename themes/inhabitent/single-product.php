@@ -34,6 +34,11 @@ get_header(); ?>
 					) );
 				?>
 			</div><!-- .entry-content -->
+			<div class="button-single">
+   <button type="button" class="black-btn"><i class="fab fa-facebook"></i>Like</button>
+   <button type="button" class="black-btn"><i class="fab fa-twitter"></i>Tweet</button>
+   <button type="button" class="black-btn"><i class="fab fa-pinterest"></i>Pin</button>
+   </div>
 					</div>
 
 		</article><!-- #post-## -->

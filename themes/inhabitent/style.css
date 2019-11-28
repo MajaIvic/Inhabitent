@@ -236,7 +236,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: Merriweather Web, serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -755,16 +755,22 @@ footer {
           .header-nav header nav .menu-main-menu-container ul li a:visited {
             color: #21759b; }
 
-.main-search-form .search-field {
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  width: 0;
-  border: 0;
-  padding: 0; }
-
-.main-search-form .search-animation {
-  width: 200px;
-  padding: 8px 15px; }
+.main-search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .main-search-form .search-field {
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    width: 0;
+    border: 0;
+    padding: 0; }
+  .main-search-form .search-animation {
+    width: 200px;
+    padding: 8px 15px; }
 
 .single-journal .type-post .read-entry {
   border: 1px solid black;
@@ -1056,7 +1062,8 @@ footer {
   text-transform: uppercase;
   color: white;
   font-size: 3rem;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  text-shadow: 2px 2px gray; }
 
 .page-header h1 {
   text-align: center;
@@ -1291,6 +1298,9 @@ footer {
     margin-top: 2em;
     height: 30rem;
     max-width: 100%; }
+
+.single-shop .nav-previous {
+  display: none; }
 
 .search-page h1 {
   font-size: 2.4rem;

@@ -38,7 +38,7 @@
 				</nav><!-- #site-navigation -->
 				</header><!-- #masthead -->
 </div>
-					<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
+					
 			<?php
 
 			if ( is_front_page()){

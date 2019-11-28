@@ -150,7 +150,7 @@
   .latest-adventure {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    // grid-template-rows: 1fr 1fr 1fr;
+
     grid-template-areas: 'canoe-girl canoe-girl beach-bonfire beach-bonfire' 'canoe-girl canoe-girl mountain-hikers night-sky' '. . . .';
     height: 50vmax;
     grid-gap: 10px;

@@ -44,8 +44,9 @@
 }
 
 .main-search-form {
-  .search-submit {
-  }
+  display: flex;
+  align-items: center;
+
   .search-field {
     transition: 0.6s;
     width: 0;

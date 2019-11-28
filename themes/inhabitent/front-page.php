@@ -102,28 +102,18 @@ get_header(); ?>
                <a href="#">Read more</a>
                </div>
 
+             </div>
 
 
+            <p class="see-more">
+                     <a href="#" class="btn">More Adventures</a>
+                  </p>
                
+         
+       </section>
 
 
-         </div>
-         <p class="see-more">
-                  <a href="#" class="btn">More Adventures</a>
-               </p>
-            
-        
-
-
-
-
-
-               </section>
-
-
-
-
-		</main><!-- #main -->
+      </main><!-- #main -->
             </div><!-- #primary -->
 
            
