@@ -372,7 +372,7 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
   border: 1px solid black;
-  color: black;
+  color: #2f1339;
   width: 8em;
   text-align: center;
   padding: 0.75rem 1.5rem;
@@ -607,7 +607,7 @@ object {
 
 .blog .read-entry {
   border: 1px solid black;
-  color: black;
+  color: #2f1339;
   width: 10em;
   text-align: center;
   padding: 0.75rem 1.5rem;
@@ -756,6 +756,14 @@ footer {
           .header-nav header nav .menu-main-menu-container ul li a:visited {
             color: #248a83; }
 
+.form-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .form-button .search-submit {
+    border: none;
+    width: 1em; }
+
 .main-search-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -770,12 +778,14 @@ footer {
     border: 0;
     padding: 0; }
   .main-search-form .search-animation {
-    width: 200px;
+    width: 150px;
     padding: 8px 15px; }
+  .main-search-form .icon-search {
+    color: #248a83; }
 
 .single-journal .type-post .read-entry {
   border: 1px solid black;
-  color: black;
+  color: #2f1339;
   width: 10em;
   text-align: center;
   padding: 0.75rem 1.5rem;
@@ -785,7 +795,7 @@ footer {
   .single-journal .type-post .read-entry:hover {
     background: #248a83;
     border: none;
-    color: white; }
+    color: #ffffff; }
 
 .single-journal .type-post .entry-content {
   padding: 0; }
@@ -801,10 +811,10 @@ footer {
     height: 5em;
     width: 22em;
     padding: 0.8em;
-    color: white; }
+    color: #ffffff; }
     .single-journal .type-post .entry-header .entry-title a {
       text-decoration: none;
-      color: white;
+      color: #ffffff;
       font-size: 30px; }
   .single-journal .type-post .entry-header .entry-meta {
     position: absolute;
@@ -812,7 +822,7 @@ footer {
     right: 0;
     background-color: #248a83;
     height: 2em;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     padding: 0.2em 1em; }
   .single-journal .type-post .entry-header img {
@@ -1157,7 +1167,7 @@ footer {
   padding-right: 10px; }
 
 .contact-side a {
-  color: black;
+  color: #2f1339;
   text-decoration: none; }
   .contact-side a:hover {
     color: #d99054; }
@@ -1183,7 +1193,7 @@ footer {
 
 .read-entry {
   border: 1px solid black;
-  color: black;
+  color: #2f1339;
   width: 10em;
   text-align: center;
   padding: 0.75rem 1.5rem;
@@ -1193,7 +1203,7 @@ footer {
   .read-entry:hover {
     background: #248a83;
     border: none;
-    color: white; }
+    color: #ffffff; }
 
 .entry-content {
   padding: 0; }
@@ -1214,7 +1224,7 @@ footer {
     padding: 0.8em; }
     .archive.date .entry-header .entry-title a {
       text-decoration: none;
-      color: white;
+      color: #ffffff;
       font-size: 30px; }
   .archive.date .entry-header .entry-meta {
     position: absolute;
@@ -1222,7 +1232,7 @@ footer {
     right: 0;
     background-color: #248a83;
     height: 2em;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     padding: 0.2em 1em; }
   .archive.date .entry-header img {
@@ -1327,7 +1337,7 @@ footer {
 
 .search-page .search-read-me {
   border: 1px solid black;
-  color: black;
+  color: #2f1339;
   width: 10em;
   text-align: center;
   padding: 0.75rem 1.5rem;

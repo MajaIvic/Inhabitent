@@ -1,21 +1,25 @@
-# RED Starter
+<h1>Inhabitent</h1>
+<p>Made by Maja Ivic</p>
+<h2>Programs applied</h2>
+<ul>
+<li>MAMP</li>
+<li>WordPress</li>
+<li>HTML5</li>
+<li>SASS</li>
+<li>SCSS</li>
+<li>JavaScript</li>
+<li>JQuery</li>
+<li>Git/Github</li>
+<li>Command Line</li>
+<li>GULP</li>
+<li>API</li>
+<li>Ajax</li>
+<li>eslint</li>
+<li>npm</li>
+<li>php</li>
+<li>Custom Plugins</li>
+<li>Custom Widgets</li>
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
-
-## Installation
-
-### 1. Download me (don't clone me!)
-
-Then add me to your `wp-content` directory.
-
-### 2. Rename the `redstarter-master` directory
-
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+</ul>
+<h2>Website Features</h2>
+<p>Inhabitent is a website build with a custom template with Wordpress. We also build our own plugins in Wordpress and added them into our website. One of the plugin we added is  the Business Hours  plugin witch alowes our client to determen ther own hours of oparation. Wordpress has a lot of custom themes, plugins, widget that we or our cient can use. Wordpress is very functional and adaptable.  </p>

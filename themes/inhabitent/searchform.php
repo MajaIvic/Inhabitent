@@ -1,3 +1,6 @@
+
+<div class="form-button">
+
 <button class="search-submit">
 	<span class="icon-search" aria-hidden="true">
 		<i class="fa fa-search"></i>
@@ -10,3 +13,4 @@
 		</label>
 	
 </form>
+</div>

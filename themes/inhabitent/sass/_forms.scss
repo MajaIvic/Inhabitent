@@ -9,7 +9,7 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
   border: 1px solid black;
-  color: black;
+  color: $color__purple-brand;
   width: 8em;
   text-align: center;
   padding: 0.75rem 1.5rem;
@@ -17,11 +17,11 @@ input[type='submit'] {
   bottom: 13px;
 
   &:hover {
-    background: #248a83;
+    background: $color__green-brand;
     border: none;
     color: #fff;
     cursor: pointer;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: $font__header;
 
     font-size: 15px;
 
